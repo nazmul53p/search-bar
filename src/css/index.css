@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.input {
+		@apply outline-none focus-within:border-none focus-within:ring-1 focus-within:ring-gray-400 hover:ring-gray-400 hover:border-gray-400 focus:border-none focus:ring-1 focus:ring-gray-400 rounded-full;
+	}
+	.options {
+		@apply p-1 rounded-lg shadow-sm w-full flex align-middle;
+	}
+	.product-image {
+		@apply px-2 w-1/6 h-auto rounded-md;
+	}
+	.product-name {
+		@apply font-normal text-base;
+	}
+	.product-price {
+		@apply text-[#61c868] font-bold text-sm;
+	}
+	.icon {
+		@apply text-[#61c868];
+	}
+}
+
+@layer base {
+}
+
+@layer utilities {
+}
